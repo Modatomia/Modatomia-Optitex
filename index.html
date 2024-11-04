@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Complementario - Modatomía</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue-primary: #1E3D59;
+            --teal: #1ABC9C;
+            --coral: #FF6E40;
+            --bone-white: #F5F5F5;
+            --gray-100: #F5F5F5;
+            --gray-200: #CCCCCC;
+            --gray-600: #777777;
+            --gray-800: #333333;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bone-white);
+            color: var(--gray-800);
+            line-height: 1.6;
+        }
+
+        .header-logo {
+            background: white;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .header-title {
+            background-color: var(--blue-primary);
+            padding: 2rem 0;
+        }
+
+        .header-gradient {
+            height: 4px;
+            background: linear-gradient(to right, var(--teal), var(--coral));
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+
+        h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            max-width: 42rem;
+            margin: 0 auto;
+        }
+
+        .content {
+            padding: 3rem 0;
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .guide-card {
+            background: white;
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--teal);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .guide-title {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--blue-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-description {
+            color: var(--gray-600);
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+
+        .guide-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--teal);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.25rem;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .guide-link:hover {
+            background-color: #169c82;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .guides-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <div class="container">
+                <!-- Tu SVG del logo aquí -->
+                <svg id="Capa_1" class="logo" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.21 93.91">
+                    <!-- ... contenido del SVG ... -->
+                </svg>
+            </div>
+        </div>
+        <div class="header-title">
+            <div class="container">
+                <h1>Material Complementario</h1>
+                <p class="subtitle">Recursos exclusivos para estudiantes de Modatomía</p>
+            </div>
+        </div>
+        <div class="header-gradient"></div>
+    </header>
+
+    <main class="content container">
+        <div class="guides-grid">
+            <div class="guide-card">
+                <h2 class="guide-title">Guía de Comandos Optitex</h2>
+                <p class="guide-description">Domina los comandos y atajos esenciales para el patronaje digital con Optitex.</p>
+                <a href="./guias/comandos-optitex/" class="guide-link">Ver Guía</a>
+            </div>
+            <!-- Aquí puedes agregar más tarjetas para futuras guías -->
+        </div>
+    </main>
+</body>
+</html>
